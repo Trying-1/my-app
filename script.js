@@ -18,4 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
             emailError.textContent = "";
         }
     });
+
+    // Add rotation to circles when hovered
+    const circles = document.querySelectorAll(".circle");
+    circles.forEach(circle => {
+        circle.addEventListener("mouseenter", () => {
+            circle.style.animation = "rotate 2s linear infinite, scaleUp 1s linear infinite alternate";
+        });
+
+        circle.addEventListener("mouseleave", () => {
+            circle.style.animation = "rotate 10s linear infinite, scaleUp 5s linear infinite alternate";
+        });
+    });
 });

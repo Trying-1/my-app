@@ -1,0 +1,22 @@
+/* Add some basic styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error-msg {
+    color: red;
+    font-size: 12px;
+}
